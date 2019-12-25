@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarningTwoComponent implements OnInit {
 
+  infoMessage:string = 'Twitter fail whale';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  computeNumbers() {
+    return 10 + 5;
   }
 
 }
