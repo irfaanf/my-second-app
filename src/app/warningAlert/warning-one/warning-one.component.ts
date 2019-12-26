@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarningOneComponent implements OnInit {
 
-  constructor() { }
+  allowSomething: boolean;
+
+  constructor() {
+    // console.log(this.allowSomething);
+    setTimeout(() => {
+      this.allowSomething = true;
+    }, 1500)
+  }
 
   ngOnInit() {
   }
