@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-second-app';
+
+  iType1 = 'text';
+  iType2 = 'range';
+  iType3 = 'date';
 }
