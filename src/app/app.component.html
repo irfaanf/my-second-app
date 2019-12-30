@@ -8,3 +8,13 @@
 <input [type]="iType1" />
 <input [type]="iType2" />
 <input [type]="iType3" />
+
+<hr>
+
+<button class="btn btn-primary" (click)="onChangeStuff()">Change stuff</button>
+{{ stuff }}
+
+<input id="text-field" oninput="console.dir(document.getElementById('text-field'))"/>
+<!-- Why is the "value" attribute's value inconsistent? The first keystroke's value seems to update based on your last keystroke?? The same happens for the event binding example below -->
+
+<input id="another-text-field" (input)="onATFKeystroke($event)"/>

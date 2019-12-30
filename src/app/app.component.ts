@@ -11,4 +11,15 @@ export class AppComponent {
   iType1 = 'text';
   iType2 = 'range';
   iType3 = 'date';
+
+  stuff;
+  fooThing;
+
+  onChangeStuff() {
+    this.stuff = "Boo!";
+  }
+
+  onATFKeystroke($event) {
+    console.log($event);
+  }
 }
