@@ -26,3 +26,9 @@
 
 <input #lastName (keyup)="keyLastName(lastName.value)">
 <p>{{ fooLastName }}</p>
+
+
+
+<h2>Two Way data binding</h2>
+<input [(ngModel)]="username" />
+{{ username }}

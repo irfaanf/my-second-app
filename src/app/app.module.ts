@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AdvertComponent } from './advert/advert.component';
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { WarningAlertComponent } from './warningAlert/warningAlert.component';
     TopMenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,6 +16,8 @@ export class AppComponent {
   fooThing;
   fooLastName = '';
 
+  username = 'ahem';
+
   onChangeStuff() {
     this.stuff = "Boo!";
   }
