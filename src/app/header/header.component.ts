@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  showGreeting: boolean = false;
+  
+  isMorning = false;
+
   constructor() { }
 
   ngOnInit() {

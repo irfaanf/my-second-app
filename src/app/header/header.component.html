@@ -1,1 +1,11 @@
-<p>header works!</p>
+<h2>Directives</h2>
+
+<p *ngIf="showGreeting">Hello and welcome!</p>
+{{ showGreeting }}
+
+<hr>
+
+<p *ngIf="isMorning; else eveningWords">Good morning</p>
+<ng-template #eveningWords>
+    <p>Good evening</p>
+</ng-template>
