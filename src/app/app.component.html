@@ -14,7 +14,15 @@
 <button class="btn btn-primary" (click)="onChangeStuff()">Change stuff</button>
 {{ stuff }}
 
-<input id="text-field" oninput="console.dir(document.getElementById('text-field'))"/>
+<input id="text-field" oninput="console.dir(document.getElementById('text-field'))" />
 <!-- Why is the "value" attribute's value inconsistent? The first keystroke's value seems to update based on your last keystroke?? The same happens for the event binding example below -->
 
-<input id="another-text-field" (input)="onATFKeystroke($event)"/>
+<input id="another-text-field" (input)="onATFKeystroke($event)" />
+
+<hr>
+
+<input #firstName (keyup)="0">
+<p>{{firstName.value}}</p>
+
+<input #lastName (keyup)="keyLastName(lastName.value)">
+<p>{{ fooLastName }}</p>

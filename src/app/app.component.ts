@@ -14,6 +14,7 @@ export class AppComponent {
 
   stuff;
   fooThing;
+  fooLastName = '';
 
   onChangeStuff() {
     this.stuff = "Boo!";
@@ -21,5 +22,9 @@ export class AppComponent {
 
   onATFKeystroke($event) {
     console.log($event);
+  }
+
+  keyLastName(value:string){
+    this.fooLastName = value + ' | ';
   }
 }
