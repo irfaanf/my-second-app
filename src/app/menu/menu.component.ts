@@ -19,6 +19,10 @@ export class MenuComponent {
 
     username = 'ahem';
 
+    myClass = 'btn btn-danger btn-lg';
+    myType = 'reset';
+    myName = 'meh-button';
+
     onChangeStuff() {
         this.stuff = "Boo!";
     }

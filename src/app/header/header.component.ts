@@ -11,6 +11,11 @@ export class HeaderComponent implements OnInit {
   
   isMorning = false;
 
+  customButtonClass = 'btn';
+  customButtonMainClass = 'btn-primary';
+
+  manualClass = 'btn btn-info';
+
   constructor() { }
 
   ngOnInit() {

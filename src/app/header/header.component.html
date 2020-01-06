@@ -9,3 +9,20 @@
 <ng-template #eveningWords>
     <p>Good evening</p>
 </ng-template>
+
+<h3>ngClass</h3>
+
+<button [ngClass]="[customButtonClass]">CLICK ME</button>
+
+<button [ngClass]="{'customButtonClass':true, 'customButtonMainClass':true}">CLICK ME</button>
+
+
+
+
+
+
+<!-- Note that this still works, instead of ngClass -->
+<!-- <button [class]="manualClass">Press me!</button> -->
+
+<!-- Note that binding to a field which does not exist in TS results in undefined. However according to hoisting, it shouldn't be undefined because it doesn't exist??? -->
+<!-- <button [class]="nonExistent">Huh?</button> -->
