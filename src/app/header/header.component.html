@@ -12,12 +12,36 @@
 
 <h3>ngClass</h3>
 
-<button [ngClass]="[customButtonClass]">CLICK ME</button>
+<h4>Ways to implement</h4>
+<h5>Array</h5>
 
-<button [ngClass]="{'customButtonClass':true, 'customButtonMainClass':true}">CLICK ME</button>
+<button [ngClass]="['btn', 'btn-primary', 'btn-sm']">ARRAY 1</button>
 
+<!-- Also works: It is possible to pass a variable from the TS instead of hard-coding a string? -->
+<button [ngClass]="[customButtonClass]">ARRAY 2</button>
 
+<!-- Also works: It is possible to pass multiple values in the array? -->
+<button [ngClass]="[customButtonMainClass, customButtonSecondaryClass]">ARRAY 2</button>
 
+<h5>Object</h5>
+
+<button [ngClass]="{'btn': true, 'btn-warning': true}">OBJECT 1</button>
+
+<!-- Does using variables from the TS as keys in the object work? Apparently not. -->
+<!-- <button [ngClass]="{customButtonClass:true, customButtonMainClass:true}">OBJECT 2</button> -->
+
+<!-- For objects, referencing a variable from the TS seems to work -->
+<button [ngClass]="specialObject">OBJECT 3</button>
+
+<h4>Delegate to component</h4>
+
+<button [ngClass]="calculateClasses()">FUNCTION 1</button>
+
+<br />
+
+<button [ngClass]="returnString()">String</button>
+<button [ngClass]="returnArray()">Array</button>
+<button [ngClass]="returnObject()">Object</button>
 
 
 
