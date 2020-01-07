@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
 
   isMorning = false;
 
+  customClassString = 'btn btn-outline-success';
+
   customButtonClass = 'btn btn-sm btn-warning';
   customButtonMainClass = 'btn';
   customButtonSecondaryClass = 'btn-success';

@@ -13,6 +13,10 @@
 <h3>ngClass</h3>
 
 <h4>Ways to implement</h4>
+<h5>String</h5>
+
+<button [ngClass]="customClassString">STRING 1</button>
+
 <h5>Array</h5>
 
 <button [ngClass]="['btn', 'btn-primary', 'btn-sm']">ARRAY 1</button>
@@ -33,7 +37,7 @@
 <!-- For objects, referencing a variable from the TS seems to work -->
 <button [ngClass]="specialObject">OBJECT 3</button>
 
-<h4>Delegate to component</h4>
+<h4>Delegate to component using function</h4>
 
 <button [ngClass]="calculateClasses()">FUNCTION 1</button>
 
