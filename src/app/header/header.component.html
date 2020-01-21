@@ -58,3 +58,11 @@
 
 <h3>ngStyle</h3>
 <button [ngStyle]="{background: 'red'}">ANGULAR</button>
+
+<hr>
+
+<div [ngClass]="this.checked ? 'green-background' : 'red-background'">
+    <input type="radio" name="position" value="defender"> Defender <br />
+    <input type="radio" name="position" value="midfielder"> Midfielder <br />
+    <input type="radio" name="position" value="attacker"> Attacker <br />
+</div>

@@ -24,6 +24,8 @@ export class HeaderComponent implements OnInit {
     'btn-info': true
   }
 
+  checked: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -47,4 +49,5 @@ export class HeaderComponent implements OnInit {
   returnObject() {
     return { 'btn': true, 'btn-info': true };
   }
+
 }
